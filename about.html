@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- CSS LINK -->
+    <script src="https://kit.fontawesome.com/b07eec864b.js" crossorigin="anonymous"></script> <!-- Fontawesome -->
+    <link rel="icon" href="cartoon-logo.png" sizes="64x64">
+    <title>About | Nur Syakirah</title>
+</head>
+<body>
+    <!--  HEADER SECTION -->
+    <header class="header" >
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Projects</a>
+            <a href="contact.html">Contacts</a>
+        </nav>
+        <div class="buttons">
+            <button id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <!-- HEADER SECTION -->
+        
+    <!-- ABOUT US SECTION -->
+    <section class="about" id="about">
+        <h1 class="heading">ABOUT <span>ME</span> </h1>
+        <div class="row">
+            <div class="image">
+                <img src="formal.jpg" alt="">
+            </div>
+            
+            <div class="content">
+                <div class="paragraph">
+                    <p>Hello! I'm Nur Syakirah Binti Alias, a passionate second-year Computer Science student at Universiti Sultan Zainal Abidin. I'm on a journey to explore and excel in the exciting world of Internet Computing</p>
+                        <div class="tab-titles">
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>      
+                        </div>
+                    
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor's Degree (2022-2025)</span><br>Field of Study: Computer Science (Internet Computing)<br>Institution: Universiti Sultan Zainal Abidin<br></li>
+                        <li><span>Certificate (2020-2022)</span><br>Field of Study: Physical Science<br>Institution: Matriculation College Selangor<br></li>
+                        <li><span>SPM (2018-2019)</span><br>Field of Study: Accounting<br>Institution: Sek. Men. Keb. Padang Tembak, KL<br></li>
+                    </ul>
+                </div>
+                    
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Collaboration</span><br>I thrive in group settings, bringing a collaborative spirit to every project.</li>
+                        <li><span>Multilingual</span><br>Fluent in both Bahasa Melayu and English, with strong written communication skills in Bahasa Melayu.</li>
+                        <li><span>Technical Proficiency</span><br>Proficient in Microsoft Word, PowerPoint, and Excel, with a solid foundation in various computer skills.</li>
+                        <li><span>Problem-Solving</span><br>I approach challenges with a problem-solving mindset, finding innovative solutions to complex issues.</li>
+                    </ul>
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT US SECTION -->
+    
+    <!-- FOOTER SECTION -->
+    <section class="footer">
+        <div class="share">
+            <a href="mailto:nursyakirahalias1@gmail.com" class="fa-solid fa-envelope"></a>
+            <a href="https://t.me/nursyakirahalias" class="fas fa-paper-plane"></a> 
+            <a href="https://wa.me/60102711748" class="fa-brands fa-whatsapp"></a> 
+            <a href="https://rb.gy/181dj0" class="fa-brands fa-linkedin"></a>
+        </div>
+        <div class="credit">
+            created by <span>Nur Syakirah</span> | all rights reserved
+        </div>
+    </section>
+    <!-- FOOTER SECTION -->
+    
+    <script>
+            
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link"); 
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+            
+    </script>
+    
+<script src="script.js"></script>
+</body>
+</html>
