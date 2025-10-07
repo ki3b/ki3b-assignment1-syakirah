@@ -493,7 +493,7 @@ a{
         background-image: url(cartoon-background-phone.png);
     }
     .content h3{
-        font-size: 40px;
+        font-size: 30px;
     }
     .image, .content{
         flex-basis: 100%;
@@ -523,17 +523,26 @@ a{
         position: sticky;
         top: 0;
         z-index: 1000;
+        flex-wrap: wrap;
     }
     .header .navbar{
+        display: none; 
+        align-items: center;
+        background-color: #fff;
+        padding: 0;
+        margin: 1%;
+        border-radius: 1rem 1rem 1rem 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
         position: absolute;
         top: 100%;
-        background-color: #fff;
-        height: calc(100vh - 9rem);
-        width: 30rem;
-        right: -100%;
+        flex-direction: column;
+        height: 450%;
+        width: 100%;
+        left: 0;
+        z-index: 1000;
     }
     .header .navbar.active{
-        right: 3rem;
+        display: flex;
     }
     .header .navbar a{
         color: var(--black-color);
@@ -541,6 +550,10 @@ a{
         margin: 1.5rem;
         padding: 0.5rem;
         font-size: 2rem;
+    }
+    .header .navbar .buttons {
+        display: flex;
+        align-items: center;
     }
     html{
         font-size: 55%;
