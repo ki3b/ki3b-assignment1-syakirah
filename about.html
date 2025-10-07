@@ -9,7 +9,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> <!-- CSS LINK -->
-    <script src="https://kit.fontawesome.com/b07eec864b.js" crossorigin="anonymous"></script> <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/b07eec864b.js" crossorigin="anonymous"></script> 
     <link rel="icon" href="cartoon-logo.png" sizes="64x64">
     <title>About | Nur Syakirah</title>
 </head>
@@ -20,8 +20,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             <img src="logo.png" alt="logo">
         </a>
         <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
             <a href="blog.html">Projects</a>
             <a href="contact.html">Contacts</a>
         </nav>
@@ -45,11 +45,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 <div class="paragraph">
                     <p>Hello! I'm Nur Syakirah Binti Alias, a passionate second-year Computer Science student at Universiti Sultan Zainal Abidin. I'm on a journey to explore and excel in the exciting world of Internet Computing</p>
                         <div class="tab-titles">
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>      
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>      
                         </div>
                     
-                <div class="tab-contents" id="education">
+                <div class="tab-contents active-tab" id="education">
                     <ul>
                         <li><span>Bachelor's Degree (2022-2025)</span><br>Field of Study: Computer Science (Internet Computing)<br>Institution: Universiti Sultan Zainal Abidin<br></li>
                         <li><span>Certificate (2020-2022)</span><br>Field of Study: Physical Science<br>Institution: Matriculation College Selangor<br></li>
@@ -57,7 +57,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                     </ul>
                 </div>
                     
-                <div class="tab-contents active-tab" id="skills">
+                <div class="tab-contents" id="skills">
                     <ul>
                         <li><span>Collaboration</span><br>I thrive in group settings, bringing a collaborative spirit to every project.</li>
                         <li><span>Multilingual</span><br>Fluent in both Bahasa Melayu and English, with strong written communication skills in Bahasa Melayu.</li>
